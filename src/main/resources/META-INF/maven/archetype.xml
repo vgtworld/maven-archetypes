@@ -12,5 +12,7 @@
 		<resource>src/main/webapp/WEB-INF/classes/META-INF/persistence.xml</resource>
 		<resource>src/main/webapp/WEB-INF/tags/basic.tag</resource>
 		<resource>src/main/webapp/WEB-INF/pages/home.jsp</resource>
+		<resource>src/main/webapp/css/style.css</resource>
+		<resource>src/main/webapp/WEB-INF/web.xml</resource>
 	</resources>
 </archetype>
