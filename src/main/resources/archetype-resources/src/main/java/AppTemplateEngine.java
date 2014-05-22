@@ -1,8 +1,8 @@
 package ${package};
 
 import javax.annotation.PostConstruct;
-import javax.ejb.Singleton;
 import javax.enterprise.inject.Produces;
+import javax.inject.Singleton;
 
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.ServletContextTemplateResolver;
