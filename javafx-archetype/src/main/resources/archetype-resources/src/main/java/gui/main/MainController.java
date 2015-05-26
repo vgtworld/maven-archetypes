@@ -1,7 +1,9 @@
 package ${package}.gui.main;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.layout.BorderPane;
 
 import java.net.URL;
@@ -16,4 +18,12 @@ public class MainController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 	}
 
+	public void handleExampleButton(ActionEvent event) {
+		Alert alert = new Alert(Alert.AlertType.INFORMATION);
+		alert.setTitle("Example alert");
+		alert.setHeaderText("Example header");
+		alert.setContentText("Example content");
+
+		alert.showAndWait();
+	}
 }
