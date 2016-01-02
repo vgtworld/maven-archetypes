@@ -21,6 +21,13 @@
 				<include>**/*</include>
 			</includes>
 		</fileSet>
+		<fileSet filtered="true" packaged="false" encoding="UTF-8">
+			<directory/>
+			<includes>
+				<include>sonar-project.properties</include>
+			</includes>
+		</fileSet>
+
 		<fileSet filtered="false" packaged="false" encoding="UTF-8">
 			<directory>src/main/webapp/static</directory>
 			<includes>
