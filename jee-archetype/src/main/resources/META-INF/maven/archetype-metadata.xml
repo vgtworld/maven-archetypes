@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 http://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
         <requiredProperties>
                 <requiredProperty key="dataSource">
-                        <defaultValue>java:/datasource</defaultValue>
+                        <defaultValue>java:jboss/datasources/ExampleDS</defaultValue>
                 </requiredProperty>
         </requiredProperties>
 	<fileSets>
