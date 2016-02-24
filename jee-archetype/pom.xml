@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>pl.vgtworld</groupId>
 	<artifactId>vgt-jee-archetype</artifactId>
-	<version>3.0</version>
+	<version>3.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>JEE archetype</name>
 	<description>VGT archetype for JEE application.</description>
