@@ -13,13 +13,6 @@
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 	</properties>
 
-	<repositories>
-		<repository>
-			<id>htmleasy</id>
-			<url>http://htmleasy-maven.googlecode.com/svn/trunk/</url>
-		</repository>
-	</repositories>
-
 	<dependencies>
 		<dependency>
 			<groupId>javax</groupId>
@@ -78,18 +71,6 @@
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
 			<version>1.7.7</version>
-		</dependency>
-
-		<!-- view -->
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.googlecode.htmleasy</groupId>
-			<artifactId>htmleasy</artifactId>
-			<version>0.7</version>
 		</dependency>
 	</dependencies>
 
