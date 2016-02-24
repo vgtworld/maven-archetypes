@@ -1,6 +1,6 @@
 package ${package}.app.hello;
 
-import pl.vgtworld.test.core.app.hello.models.HelloModel;
+import ${package}.app.hello.models.HelloModel;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
