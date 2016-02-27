@@ -1,10 +1,17 @@
 <ui:composition
+		xmlns="http://www.w3.org/1999/xhtml"
+		xmlns:f="http://xmlns.jcp.org/jsf/core"
+		xmlns:h="http://xmlns.jcp.org/jsf/html"
 		xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
 		template="/WEB-INF/templates/basic.xhtml"
 		>
-	<ui:define name="pageTitle">Hello World</ui:define>
+	<ui:define name="pageTitle">#{msg.page_main_title}</ui:define>
 	<ui:define name="content">
-		<h2 class="text-center">Hello World</h2>
-		<p>Current date: #{helloController.model.currentDate}</p>
+		<h2 class="text-center">#{msg.page_main_title}</h2>
+		<p>
+			<h:outputFormat value="#{msg.page_main_message_currentTime}">
+				<f:param value="#{helloController.model.currentDate}"/>
+			</h:outputFormat>
+		</p>
 	</ui:define>
 </ui:composition>
