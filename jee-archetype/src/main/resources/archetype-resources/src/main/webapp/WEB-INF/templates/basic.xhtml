@@ -23,8 +23,7 @@
 		<h:form styleClass="language-form">
 			<span>#{msg.languageForm_language}</span>
 			<h:selectOneMenu value="#{localeManager.activeLanguage}" onchange="submit()">
-				<f:selectItem itemValue="en" itemLabel="EN"/>
-				<f:selectItem itemValue="pl" itemLabel="PL"/>
+				<f:selectItems value="#{localeManager.availableLanguages}"/>
 			</h:selectOneMenu>
 		</h:form>
 	</div>
