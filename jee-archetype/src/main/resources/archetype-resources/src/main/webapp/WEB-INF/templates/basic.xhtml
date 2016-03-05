@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<html lang="#{localeManager.activeLanguage}" xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<f:view locale="#{localeManager.activeLocale}"/>
 <h:head>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
 	<link rel="stylesheet" href="#{request.contextPath}/static/bootstrap/3.3.5/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="#{request.contextPath}/static/css/style.css"/>
 	<script src="#{request.contextPath}/static/jquery/1.9.1/jquery.min.js"></script>
 	<script src="#{request.contextPath}/static/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<title><ui:insert name="pageTitle"/></title>
@@ -17,5 +19,14 @@
 		</div>
 	</nav>
 	<div class="content"><ui:insert name="content"/></div>
+	<div class="footer">
+		<h:form styleClass="language-form">
+			<span>#{msg.languageForm_language}</span>
+			<h:selectOneMenu value="#{localeManager.activeLanguage}" onchange="submit()">
+				<f:selectItem itemValue="en" itemLabel="EN"/>
+				<f:selectItem itemValue="pl" itemLabel="PL"/>
+			</h:selectOneMenu>
+		</h:form>
+	</div>
 </h:body>
 </html>
