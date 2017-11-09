@@ -7,4 +7,9 @@
     <packaging>jar</packaging>
     <name>Liquibase archetype</name>
     <description>VGT archetype for maven-based liquibase database versioning.</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
 </project>
