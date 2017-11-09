@@ -1,0 +1,1 @@
+mvn liquibase:update -Dliquibase.url=jdbc:mysql://localhost/EXAMPLE_DATABASE -Dliquibase.username=EXAMPLE_USER -Dliquibase.password=EXAMPLE_PASSWORD
